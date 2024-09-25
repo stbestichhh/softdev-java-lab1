@@ -12,7 +12,7 @@ public class Lab1 {
 
     try {
       // action 1
-      long[][] multipliedMatrix = new long[matrix.length][marrix[0].length]; // C
+      long[][] multipliedMatrix = new long[matrix.length][matrix[0].length]; // C
       for (int i = 0; i < matrix.length; i++) {
         for (int j = 0; j < matrix[i].length; j++) {
           multipliedMatrix[i][j] = matrix[i][j] * CONSTANT;
@@ -34,7 +34,7 @@ public class Lab1 {
         sumOfMaxElements += maxInRow;
       }
 
-      System.out.println("Sum of the highest values of each row from multiplied matrix is ", sumOfMaxElements);
+      System.out.println("Sum of the highest values of each row from multiplied matrix is " + sumOfMaxElements);
     } catch (Exception e) {
       System.err.println(e.getMessage());
     }
